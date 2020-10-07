@@ -1,0 +1,73 @@
+/* This line is theme specific - it includes the base theme CSS */
+/*@import '../alabaster.css';  /* for Alabaster */
+@import 'theme.css';       /* for the Read the Docs theme */
+
+
+@font-face {
+    font-family: "FontAwesome";
+    font-weight: normal;
+    font-style : normal;
+           src : url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/webfonts/fa-solid-900.eot");
+           src : url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/webfonts/fa-solid-900.eot") format("embedded-opentype"),
+                 url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/webfonts/fa-solid-900.woff2") format("woff2"),
+                 url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/webfonts/fa-solid-900.woff") format("woff"),
+                 url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/webfonts/fa-solid-900.ttf") format("truetype")
+}
+
+.admonition.tip {
+    font-weight: normal;
+}
+
+.rst-content .admonition.tip .admonition-title:before {
+    content: "\f164";
+}
+
+.rst-content .admonition.warning .admonition-title:before {
+    content: "\f071";
+}
+
+.rst-content .admonition.danger .admonition-title:before {
+    content: "\f54c";
+}
+
+.rst-content .admonition.note .admonition-title:before {
+    content: "\f303";
+}
+    
+.rst-content .admonition.important .admonition-title:before {
+    content: "\f06a";
+}
+
+blockquote.epigraph {
+    background-color: #f9f9f9;
+    padding: 12px;
+    margin-bottom: 24px;
+}
+
+blockquote.epigraph:before {
+    font-family: 'FontAwesome';
+    content: "\f10d Quote";
+    background-color: #ccc;
+    padding: 12px;
+    margin-bottom: 24px;
+}
+
+blockquote.epigraph1 div {
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote.epigraph1:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+blockquote.epigraph1 p {
+    display: inline;
+}
